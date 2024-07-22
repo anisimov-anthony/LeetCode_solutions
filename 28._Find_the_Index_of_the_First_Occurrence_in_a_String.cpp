@@ -2,17 +2,16 @@
 #include <string>
 
 class Solution {
-public:
+  public:
     int strStr(std::string haystack, std::string needle) {
-        if (haystack.size() < needle.size())
-        {
+        if (haystack.size() < needle.size()) {
             return -1;
         }
-        
+
         if (needle.empty()) {
             return 0;
         }
-        
+
         for (size_t i = 0; i <= haystack.size() - needle.size(); i++) {
             if (haystack.substr(i, needle.size()) == needle) {
                 return i;
