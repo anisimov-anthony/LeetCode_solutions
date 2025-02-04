@@ -3,7 +3,10 @@ name: Sort files alphabetically
 on:
   push:
     branches:
-      - master 
+      - master
+
+permissions:
+  contents: write  
 
 jobs:
   sort-files:
@@ -17,7 +20,6 @@ jobs:
 
       - name: Sort files alphabetically
         run: |
-
           ls | sort | while read file; do
             mv "$file" "temp_$file"
           done
