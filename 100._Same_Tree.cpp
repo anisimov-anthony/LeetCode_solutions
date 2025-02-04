@@ -12,9 +12,10 @@ struct TreeNode {
 
 class Solution {
   public:
-    bool hasPathSum(TreeNode *root, int targetSum) {
-        if (!root) return false;
-        if (!root->right && !root->left) return targetSum == root->val;
-        return hasPathSum(root->left, targetSum - root->val) || hasPathSum(root->right, targetSum - root->val);
+    bool isSameTree(TreeNode *p, TreeNode *q) {
+        if (!p && !q) return true;
+        if (!p || !q) return false;
+        if (p->val != q->val) return false;
+        return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
     }
 };
