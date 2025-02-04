@@ -6,7 +6,7 @@ on:
       - master
 
 permissions:
-  contents: write  
+  contents: write  # This grants write access to repository contents
 
 jobs:
   sort-files:
@@ -20,18 +20,39 @@ jobs:
 
       - name: Sort files alphabetically
         run: |
-          ls | sort | while read file; do
-            mv "$file" "temp_$file"
-          done
+          # Debug: Show files before sorting
+          echo "Before sorting:"
+          ls
 
-          ls temp_* | sort | while read file; do
-            mv "$file" "${file#temp_}"
+          # Create a temporary directory for sorted files
+          mkdir sorted_files
+          
+          # Sort files and move them to the temporary directory
+          ls | sort | while read file; do
+            mv "$file" "sorted_files/$file"
           done
+          
+          # Debug: Show files after sorting
+          echo "After sorting:"
+          ls sorted_files
+
+          # Move sorted files back to the original directory
+          mv sorted_files/* .
+          
+          # Remove the temporary directory
+          rmdir sorted_files
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Check if there are any changes
+          git status
+
+          # Add all changes and commit if necessary
           git add .
           git diff --quiet && git diff --staged --quiet || git commit -m "Sort files alphabetically"
+
+          # Push changes
           git push
