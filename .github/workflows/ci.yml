@@ -36,9 +36,9 @@ jobs:
           echo "After sorting:"
           ls sorted_files
 
-          # Move sorted files back to the original directory
+          # Move sorted files back to the original directory (from sorted_files to current dir)
           mv sorted_files/* .
-          
+
           # Remove the temporary directory
           rmdir sorted_files
 
