@@ -1,8 +1,10 @@
 mod sol_0415_add_strings;
+mod sol_0476_number_complement;
 mod sol_0647_palindromic_substrings;
 mod sol_0674_longest_continuous_increasing_subsequence;
 mod sol_1037_valid_boomerang;
 mod sol_1480_running_sum_of_1d_array;
+mod sol_1791_find_center_of_star_graph;
 mod sol_1929_concatenation_of_array;
 mod sol_1935_maximum_number_of_words_you_can_type;
 mod sol_2582_pass_the_pillow;
