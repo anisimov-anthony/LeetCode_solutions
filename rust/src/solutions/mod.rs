@@ -1,3 +1,4 @@
+mod sol_0223_rectangle_area;
 mod sol_0415_add_strings;
 mod sol_0476_number_complement;
 mod sol_0647_palindromic_substrings;
