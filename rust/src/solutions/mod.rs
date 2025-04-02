@@ -15,5 +15,6 @@ mod sol_2423_remove_letter_to_equalize_frequency;
 mod sol_2582_pass_the_pillow;
 mod sol_2843_count_symmetric_integers;
 mod sol_2937_make_three_strings_equal;
+mod sol_3038_maximum_number_of_operations_with_the_same_score_1;
 mod sol_3074_apple_redistribution_into_boxes;
 mod sol_3274_check_if_two_chessboard_squares_have_the_same_color;
