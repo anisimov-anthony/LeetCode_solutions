@@ -1,4 +1,5 @@
 mod sol_0022_generate_parentheses;
+mod sol_0024_swap_nodes_in_pairs;
 mod sol_0146_lru_cache;
 mod sol_0171_excel_sheet_column_number;
 mod sol_0223_rectangle_area;
