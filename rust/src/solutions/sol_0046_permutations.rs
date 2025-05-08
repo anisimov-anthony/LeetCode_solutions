@@ -29,8 +29,8 @@ pub fn permute(nums: Vec<i32>) -> Vec<Vec<i32>> {
         let prev_level = levels.get(&(i - 1)).unwrap().clone();
         let mut new_level = Vec::with_capacity(factorial(i + 1));
 
-        for permutation in &prev_level {
-            let new_permutations = cyclic_insert_element_in_sequence(permutation.clone(), nums[i]);
+        for sub_level in &prev_level {
+            let new_permutations = cyclic_insert_element_in_sequence(sub_level.clone(), nums[i]);
             new_level.extend(new_permutations);
         }
 
