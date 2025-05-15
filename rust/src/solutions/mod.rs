@@ -8,6 +8,7 @@ mod sol_0146_lru_cache;
 mod sol_0171_excel_sheet_column_number;
 mod sol_0219_contains_duplicate_2;
 mod sol_0223_rectangle_area;
+mod sol_0228_summary_ranges;
 mod sol_0347_top_k_frequent_elements;
 mod sol_0415_add_strings;
 mod sol_0476_number_complement;
