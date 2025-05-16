@@ -5,6 +5,7 @@ mod sol_0046_permutations;
 mod sol_0075_sort_colors;
 mod sol_0078_subsets;
 mod sol_0146_lru_cache;
+mod sol_0155_min_stack;
 mod sol_0171_excel_sheet_column_number;
 mod sol_0219_contains_duplicate_2;
 mod sol_0223_rectangle_area;
