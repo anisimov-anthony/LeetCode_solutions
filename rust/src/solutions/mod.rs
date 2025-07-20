@@ -31,6 +31,7 @@ mod sol_0674_longest_continuous_increasing_subsequence;
 mod sol_0704_binary_search;
 mod sol_0709_to_lower_case;
 mod sol_0796_rotate_string;
+mod sol_1002_find_common_characters;
 mod sol_1037_valid_boomerang;
 mod sol_1108_defanging_an_ip_address;
 mod sol_1295_find_numbers_with_even_number_of_digits;
