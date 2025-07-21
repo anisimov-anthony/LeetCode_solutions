@@ -37,6 +37,7 @@ mod sol_1108_defanging_an_ip_address;
 mod sol_1295_find_numbers_with_even_number_of_digits;
 mod sol_1342_number_of_steps_to_reduce_a_number_to_zero;
 mod sol_1431_kids_with_the_greatest_number_of_candies;
+mod sol_1456_maximum_number_of_vowels_in_a_substring_of_given_length;
 mod sol_1480_running_sum_of_1d_array;
 mod sol_1512_number_of_good_pairs;
 mod sol_1636_sort_array_by_increasing_frequency;

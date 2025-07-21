@@ -46,22 +46,23 @@ mod tests {
 
     #[test]
     fn test_common_chars_basic() {
+        let mut result1 = common_chars(vec![
+            "bella".to_string(),
+            "label".to_string(),
+            "roller".to_string(),
+        ]);
+        result1.sort();
         assert_eq!(
-            common_chars(vec![
-                "bella".to_string(),
-                "label".to_string(),
-                "roller".to_string()
-            ]),
+            result1,
             vec!["e".to_string(), "l".to_string(), "l".to_string()]
         );
 
-        assert_eq!(
-            common_chars(vec![
-                "cool".to_string(),
-                "lock".to_string(),
-                "cook".to_string()
-            ]),
-            vec!["c".to_string(), "o".to_string()]
-        );
+        let mut result2 = common_chars(vec![
+            "cool".to_string(),
+            "lock".to_string(),
+            "cook".to_string(),
+        ]);
+        result2.sort();
+        assert_eq!(result2, vec!["c".to_string(), "o".to_string()]);
     }
 }
