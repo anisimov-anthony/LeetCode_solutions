@@ -5,7 +5,7 @@ pub fn find_duplicates(nums: Vec<i32>) -> Vec<i32> {
     }
 
     let mut result = Vec::new();
-    fn counting_sort(mut nums: Vec<i32>) -> Vec<i32> {
+    fn counting_sort(nums: Vec<i32>) -> Vec<i32> {
         if nums.is_empty() {
             return nums;
         }
