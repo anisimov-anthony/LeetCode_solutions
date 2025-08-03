@@ -21,6 +21,7 @@ mod sol_0229_majority_element_2;
 mod sol_0258_add_digits;
 mod sol_0263_ugly_number;
 mod sol_0287_find_the_duplicate_number;
+mod sol_0338_counting_bits;
 mod sol_0342_power_of_four;
 mod sol_0347_top_k_frequent_elements;
 mod sol_0390_elimination_game;
