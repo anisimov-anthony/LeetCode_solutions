@@ -76,6 +76,7 @@ mod sol_1431_kids_with_the_greatest_number_of_candies;
 mod sol_1450_number_of_students_doing_homework_at_a_given_time;
 mod sol_1456_maximum_number_of_vowels_in_a_substring_of_given_length;
 mod sol_1464_maximum_product_of_two_elements_in_an_array;
+mod sol_1470_shuffle_the_array;
 mod sol_1480_running_sum_of_1d_array;
 mod sol_1512_number_of_good_pairs;
 mod sol_1572_matrix_diagonal_sum;
