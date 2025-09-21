@@ -211,6 +211,7 @@ mod sol_3274_check_if_two_chessboard_squares_have_the_same_color;
 mod sol_3280_convert_date_to_binary;
 mod sol_3340_check_balanced_string;
 mod sol_3446_sort_matrix_by_diagonals;
+mod sol_3527_find_the_most_common_response;
 mod sol_3550_smallest_index_with_digit_sum_equal_to_index;
 mod sol_3668_restore_finishing_order;
 mod sol_3684_maximize_sum_of_at_most_k_distinct_elements;
